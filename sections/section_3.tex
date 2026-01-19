@@ -1,3 +1,97 @@
-\section{Title of Section 3}
-\subsection{subsection 3}
-This section contains the third part of the analysis.
+    \section{Filtr pasmowo przepustowy o paśmie 1 - 300 Hz}
+
+    \subsection{Schemat filtra}
+Poniżej przedstawiono schemat drugiego, bardziej selektywnego
+filtra pasmowo przepustowego. Schemat ten został utworzony na
+podstawie instrukcji i składa się z filtru aktywnego 3 rzędu wraz z 
+filtrem pasywnym dolnoprzepustowym. Filtr, który mięliśmy za zadanie
+zaprojektować miał być filtrem Butterwortha oraz mieć pasmo 
+przenoszenia od 1 Hz do 300 Hz.
+% --- photo: filtr nr 2 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=1\textwidth]{figures/BPF_ideal.png}
+}
+\caption{Schemat drugiego filtra pasmowo przepustowego.}
+\end{figure}
+% --- end photo ---
+
+    \subsection{Wartości użytych elementów - wartości teoretyczne}
+Drugi filtr wykorzystuje rezystory i kondensatory o wartościach, 
+które dobraliśmy na podstawie obliczeń teoretycznych - poniżej 
+przedstawione są wyniki tych obliczeń, a same obliczenia są dodane 
+na samym dole sprawozdania w sekcji "Obliczenia teoretyczne". \\
+Dla filtru Butterwortha 3 rzędu o paśmie przenoszenia od 1 Hz do 300 Hz
+parametry wynoszą:
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{} & \textbf{i = 1} & \textbf{i = 2} \\
+\hline
+a & 0,7560 & 0,9996 \\
+\hline
+b & 0 & 0,4772 \\
+\hline
+k & 1,323 & 1,414 \\
+\hline
+Q & - & 0,69 \\
+\hline
+\end{tabular}
+\end{table}
+Dla tych parametrów obliczyliśmy rezystory i kondensatory, przyjmując 
+początkowo C1 = 100nF. Po przybliżeniu wartości rezystorów i kondensatorów 
+do najbliższych wartości standardowych otrzymaliśmy:
+\begin{itemize}
+    \item R1 = 4 k$\Omega$
+    \item R2 = 2.1 k$\Omega$ (złożony z szeregowego połączenia 2k$\Omega$
+ i 100 $\Omega$)
+    \item R3 = 3.3 k$\Omega$
+    \item R4 = 330 k$\Omega$
+    \item R5 = 8.2 k$\Omega$
+    \item C1 = C2 = 100 nF
+    \item C3 = 200 nF (dwa równolegle połączone kondensatory 100 nF)
+    \item C4 = 470 nF
+\end{itemize}
+Wszystkie te wartości są naniesione na schemacie filtra w podsekcji 4.1.
+
+    \subsection{Wartości użytych elementów - wartości rzeczywistych}
+Na podstawie wyników przedstawionych w poprzedniej podsekcji, 
+dobraliśmy elementy w większości w oparciu o te wartości standardowe. 
+Wyjątkiem jest R4 i R5, który zastąpiliśmy jednym rezystorem o wartości 
+\textbf{R4 = 343 k$\Omega$}. Standardowo był to rezystor 330 k$\Omega$, 
+ale ze względu zmierzoną jego rezystancję pozwolił nam na zastąpienie
+szeregowego połączenia R4 i R5 jednym rezystorem. Dodatkowo warto 
+wspomnieć, że R2 miał być początkowo złożony z 2 rezystorów 2k$\Omega$
+i 100 $\Omega$, ale po zmierzeniu standardowego rezystora 2.2 k$\Omega$ 
+otrzymaliśmy rezystancję bliską 2.1 k$\Omega$, dlatego wykorzystaliśmy 
+ten rezystor. \\
+Ostateczne wartości elementów użytych do budowy filtra to:
+\begin{itemize}
+    \item R1 = 3.86 k$\Omega$
+    \item R2 = 2.12 k$\Omega$
+    \item R3 = 3.3 k$\Omega$
+    \item R4 = 343 k$\Omega$
+    \item C1 = C2 = 100 nF
+    \item C3 = 200 nF (dwa równolegle połączone kondensatory 100 nF)
+    \item C4 = 470 nF
+\end{itemize}
+    \subsection{Odpowiedź częstotliwościowa filtra}
+Po ustaleniu rzeczywistych wartości elementów, wykonaliśmy analizę
+częstotliwościową filtra w programie LTspice. Poniżej przedstawiono
+uzyskaną odpowiedź częstotliwościową.
+% --- photo: freq response filtra nr 2 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=1\textwidth]{figures/BPF_freq_response.png}
+}
+\caption{Odpowiedź częstotliwościowa drugiego filtra pasmowo przepustowego.}
+\end{figure}
+% --- end photo ---

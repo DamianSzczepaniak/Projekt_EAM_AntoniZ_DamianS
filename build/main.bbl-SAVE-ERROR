@@ -16,34 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{article_1}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=2e80a3850466a19174ece5803254696b}{%
-           family={Mądry},
-           familyi={M\bibinitperiod},
-           given={Ktoś},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{2e80a3850466a19174ece5803254696b}
-      \strng{fullhash}{2e80a3850466a19174ece5803254696b}
-      \strng{fullhashraw}{2e80a3850466a19174ece5803254696b}
-      \strng{bibnamehash}{2e80a3850466a19174ece5803254696b}
-      \strng{authorbibnamehash}{2e80a3850466a19174ece5803254696b}
-      \strng{authornamehash}{2e80a3850466a19174ece5803254696b}
-      \strng{authorfullhash}{2e80a3850466a19174ece5803254696b}
-      \strng{authorfullhashraw}{2e80a3850466a19174ece5803254696b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Starcze Rady}
-      \field{title}{Rada starą dupą, a kogut w pełni}
-      \field{year}{2026}
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

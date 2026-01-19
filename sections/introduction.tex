@@ -1,19 +1,28 @@
-    \section{Ogólna struktura projektu}
-    \subsection{Wprowadzenie}
+    \section*{Ogólna struktura projektu}
+    \addcontentsline{toc}{section}{Ogólna struktura projektu}
+    \subsection*{Wprowadzenie}
+    \addcontentsline{toc}{subsection}{Wprowadzenie}
 Zadaniem jest skonstruowanie wzmacniacza biopotencjałów. 
 Jego struktura będzie się składać z: stopnia wejściowego opartego na
-wzmacniaczu pomiarowym [model], wstępnym filtrze pasmowo przepustowym, 
+wzmacniaczu pomiarowym PGA204AP, wstępnym filtrze pasmowo przepustowym, 
 bardziej selektywnym filtrze pasmowo przepustowym
 oraz filtrze typu Notch eliminującym zakłócenia sieciowe 50 Hz.
-\subsection{Ogólna struktura wzmacniacza}
+
+    \subsection*{Ogólna struktura wzmacniacza}
+    \addcontentsline{toc}{subsection}{Ogólna struktura wzmacniacza}
 Poniżej przedstawiono ogólną strukturę wzmacniacza biopotencjałów. 
 Wyróżnione zostały opisane
+% --- photo: tor pomiarowy ---
 \begin{figure}[H]
 \centering
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=0.4\textwidth]{figures/example.png}
+    \includegraphics[width=1\textwidth]{figures/tor_pomiarowy.png}
 }
 \caption{Uproszczony schemat projektowanego toru pomiarowego.}
 \end{figure}
+% --- end photo ---
+Cały tor pomiarowy został wykonany w taki sposób, aby możliwe było
+testowanie poszczególnych jego części poprzez wyprowadzenie pinów 
+lub kabli w odpowiednich miejscach.
