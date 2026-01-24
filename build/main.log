@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.7)  19 JAN 2026 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.7)  24 JAN 2026 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,7 +708,7 @@ LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 )
 ==> First Aid for cleveref.sty applied!
-Package hyperref Info: Option `colorlinks' set `false' on input line 49.
+Package hyperref Info: Option `colorlinks' set `false' on input line 52.
 (c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
 \FN@temptoken=\toks46
@@ -1166,14 +1166,23 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 5.
 Package biblatex Info: Reference segment=0 on input line 5.
  (./sections/starting_pages.tex
-<figures/agh_logo.jpg, id=110, 226.9278pt x 358.4592pt>
+<figures/agh_logo.jpg, id=159, 226.9278pt x 358.4592pt>
 File: figures/agh_logo.jpg Graphic file (type jpg)
 <use figures/agh_logo.jpg>
 Package pdftex.def Info: figures/agh_logo.jpg  used on input line 11.
-(pdftex.def)             Requested size: 136.15771pt x 215.07716pt.
+(pdftex.def)             Requested size: 113.46361pt x 179.22916pt.
  [1
 
-{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./figures/agh_logo.jpg>]) (./sections/contents.tex (build/main.toc
+{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./figures/agh_logo.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 32.
+ (c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 \clearpage
+                [1{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./sections/contents.tex (build/main.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2.
  (c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1211,28 +1220,16 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
+ [2
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2 \newpage
-             [1]) (./sections/introduction.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 4.
-
-<figures/tor_pomiarowy.png, id=151, 1087.81406pt x 292.84406pt>
+]) (./sections/introduction.tex
+<figures/tor_pomiarowy.png, id=219, 1087.81406pt x 292.84406pt>
 File: figures/tor_pomiarowy.png Graphic file (type png)
 <use figures/tor_pomiarowy.png>
-Package pdftex.def Info: figures/tor_pomiarowy.png  used on input line 22.
-(pdftex.def)             Requested size: 455.24411pt x 122.55576pt.
-
-Overfull \hbox (10.66666pt too wide) in paragraph at lines 22--23
- [][] 
- []
-
+Package pdftex.def Info: figures/tor_pomiarowy.png  used on input line 27.
+(pdftex.def)             Requested size: 432.48051pt x 116.42506pt.
 ) (./sections/section_1.tex) (./sections/section_2.tex
-<figures/BPF_1st_ideal.png, id=153, 1114.1625pt x 554.82281pt>
+<figures/BPF_1st_ideal.png, id=221, 1114.1625pt x 554.82281pt>
 File: figures/BPF_1st_ideal.png Graphic file (type png)
 <use figures/BPF_1st_ideal.png>
 Package pdftex.def Info: figures/BPF_1st_ideal.png  used on input line 12.
@@ -1242,18 +1239,14 @@ Overfull \hbox (10.66666pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[2 <./figures/tor_pomiarowy.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 29.
- (c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<figures/BPF_1st_freq_response.png, id=160, 1440.13031pt x 634.62094pt>
-File: figures/BPF_1st_freq_response.png Graphic file (type png)
-<use figures/BPF_1st_freq_response.png>
-Package pdftex.def Info: figures/BPF_1st_freq_response.png  used on input line 58.
+[3 <./figures/tor_pomiarowy.png>]
+<plots/BPF_1st_freq_response.png, id=228, 1440.13031pt x 634.62094pt>
+File: plots/BPF_1st_freq_response.png Graphic file (type png)
+<use plots/BPF_1st_freq_response.png>
+Package pdftex.def Info: plots/BPF_1st_freq_response.png  used on input line 62.
 (pdftex.def)             Requested size: 364.19667pt x 160.48503pt.
-) (./sections/section_3.tex [3{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./figures/BPF_1st_ideal.png>]
-<figures/BPF_ideal.png, id=171, 1413.02907pt x 618.81187pt>
+ [4{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./figures/BPF_1st_ideal.png>]) (./sections/section_3.tex
+<figures/BPF_ideal.png, id=238, 1413.02907pt x 618.81187pt>
 File: figures/BPF_ideal.png Graphic file (type png)
 <use figures/BPF_ideal.png>
 Package pdftex.def Info: figures/BPF_ideal.png  used on input line 17.
@@ -1263,19 +1256,19 @@ Overfull \hbox (10.66666pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[4 <./figures/BPF_1st_freq_response.png> <./figures/BPF_ideal.png>]
-<figures/BPF_freq_response.png, id=180, 1436.36626pt x 633.86812pt>
-File: figures/BPF_freq_response.png Graphic file (type png)
-<use figures/BPF_freq_response.png>
-Package pdftex.def Info: figures/BPF_freq_response.png  used on input line 94.
+[5 <./plots/BPF_1st_freq_response.png> <./figures/BPF_ideal.png>]
+<plots/BPF_freq_response.png, id=248, 1436.36626pt x 633.86812pt>
+File: plots/BPF_freq_response.png Graphic file (type png)
+<use plots/BPF_freq_response.png>
+Package pdftex.def Info: plots/BPF_freq_response.png  used on input line 79.
 (pdftex.def)             Requested size: 455.24411pt x 200.89786pt.
 
-Overfull \hbox (10.66666pt too wide) in paragraph at lines 94--95
+Overfull \hbox (10.66666pt too wide) in paragraph at lines 79--80
  [][] 
  []
 
-) (./sections/section_4.tex [5]
-<figures/NotchF_ideal.png, id=186, 1253.43282pt x 659.46375pt>
+[6]) (./sections/section_4.tex
+<figures/NotchF_ideal.png, id=254, 1253.43282pt x 659.46375pt>
 File: figures/NotchF_ideal.png Graphic file (type png)
 <use figures/NotchF_ideal.png>
 Package pdftex.def Info: figures/NotchF_ideal.png  used on input line 12.
@@ -1285,45 +1278,41 @@ Overfull \hbox (10.66666pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-[6 <./figures/BPF_freq_response.png> <./figures/NotchF_ideal.png>]
-<figures/NotchF_freq_response.png, id=196, 1436.36626pt x 632.3625pt>
-File: figures/NotchF_freq_response.png Graphic file (type png)
-<use figures/NotchF_freq_response.png>
-Package pdftex.def Info: figures/NotchF_freq_response.png  used on input line 44.
+[7 <./plots/BPF_freq_response.png> <./figures/NotchF_ideal.png>]
+<plots/NotchF_freq_response.png, id=263, 1436.36626pt x 632.3625pt>
+File: plots/NotchF_freq_response.png Graphic file (type png)
+<use plots/NotchF_freq_response.png>
+Package pdftex.def Info: plots/NotchF_freq_response.png  used on input line 49.
 (pdftex.def)             Requested size: 455.24411pt x 200.42067pt.
 
-Overfull \hbox (10.66666pt too wide) in paragraph at lines 44--45
+Overfull \hbox (10.66666pt too wide) in paragraph at lines 49--50
  [][] 
  []
 
-) (./sections/section_5.tex) (./sections/observations.tex) (./sections/conclusions.tex)
-
-LaTeX Warning: Empty bibliography on input line 30.
-
-[7 <./figures/NotchF_freq_response.png>] (build/main.aux)
+) (./sections/section_5.tex) (./sections/observations.tex) (./sections/conclusions.tex) (./sections/calculations.tex [8 <./plots/NotchF_freq_response.png>]) [9{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] (build/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8052935565C1ED053F9F979AA9981290;5681.
+(rerunfilecheck)             Checksum: D7DA7DCB857CEE1DDE04C4E963824F6A;6709.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49401 strings out of 469519
- 1129585 string characters out of 5467705
- 2052581 words of memory out of 5000000
- 77254 multiletter control sequences out of 15000+600000
- 671445 words of font info for 106 fonts, out of 8000000 for 9000
+ 49703 strings out of 469519
+ 1135448 string characters out of 5467705
+ 2056152 words of memory out of 5000000
+ 77512 multiletter control sequences out of 15000+600000
+ 676836 words of font info for 116 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 104i,12n,121p,1307b,1143s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb>
-Output written on build/main.pdf (8 pages, 501038 bytes).
+ 104i,11n,121p,1307b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/gucio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on build/main.pdf (10 pages, 564622 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 26885 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 31077 words of extra memory for PDF output out of 35830 (max. 10000000)
 

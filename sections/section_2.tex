@@ -20,7 +20,9 @@ było dobranie odpowiednich wartości elementów tak, aby uzyskać
 pasmo 0.5 Hz - 1kHz o wzmocnieniu 10 V/V. \\
 {\Large\bfseries TRZEBA ZROBIĆ OBLICZENIA I WPISAĆ JE TUTAJ}
 
-    \subsection{Wartości użytych elementów - wartości teoretyczne}
+    \subsection{Wartości użytych elementów}
+
+    \subsubsection{Wartości teoretyczne}
 W celu realizacji pierwszego filtra pasmowo przepustowego zastosowano 
 odpowiednie wartości rezystorów i pojemności podane w instrukcji. 
 W efektcie uzyskujemy aby uzyskujemy pasmo około 0.5 Hz – 500 Hz. 
@@ -33,7 +35,7 @@ Idealne wartości tych elementów wynoszą (naniesione na schemacie powyżej):
     \item C2 = 3.3 nF
 \end{itemize}
 
-    \subsection{Wartości użytych elementów - wartości rzeczywistych}
+    \subsubsection{Wartości rzeczywiste}
 Realne wartości elementów wykorzystanych do budowy filtra to:
 \begin{itemize}
     \item R1 = 327 k$\Omega$
@@ -44,6 +46,8 @@ Realne wartości elementów wykorzystanych do budowy filtra to:
 \end{itemize}
 
     \subsection{Odpowiedź częstotliwościowa filtra}
+
+    \subsubsection{Symulacja}
 Po ustaleniu rzeczywistych wartości elementów, wykonaliśmy analizę
 częstotliwościową filtra w programie LTspice. Poniżej przedstawiono
 uzyskaną odpowiedź częstotliwościową. Kursor 1. wskazuje na 3dB 
@@ -54,8 +58,11 @@ dolną granicę filtru, natomiast kursor 2. na górną granicę filtru.
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=0.8\textwidth]{figures/BPF_1st_freq_response.png}
+    \includegraphics[width=0.8\textwidth]{plots/BPF_1st_freq_response.png}
 }
 \caption{Odpowiedź częstotliwościowa pierwszego filtra pasmowo przepustowego.}
 \end{figure}
 % --- end photo ---
+
+    \subsubsection{Pomiary}
+No trzeba by było zrobić żeby coś tu wpisać\ldots

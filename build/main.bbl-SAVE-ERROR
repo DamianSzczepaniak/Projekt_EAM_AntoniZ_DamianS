@@ -16,5 +16,48 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{SLOA088}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=a8d3b235a0ded2ec80e25078a9d4ec37}{%
+           family={Kugelstadt},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=95df8473c33ab1b972e223ec8397b522}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{fullhash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{fullhashraw}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{bibnamehash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{authorbibnamehash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{authornamehash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{authorfullhash}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{authorfullhashraw}{a8d3b235a0ded2ec80e25078a9d4ec37}
+      \strng{editorbibnamehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{editornamehash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{editorfullhash}{95df8473c33ab1b972e223ec8397b522}
+      \strng{editorfullhashraw}{95df8473c33ab1b972e223ec8397b522}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Op Amps for Everyone}
+      \field{title}{Chapter 16: Active Filter Design Techniques}
+      \field{year}{2002}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
