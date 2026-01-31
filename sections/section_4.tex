@@ -1,29 +1,43 @@
     \section{Filtr Notcha o częstotliwości 50 Hz}
 
     \subsection{Schemat filtra}
-xxxxxxxxx
+Poniższy schemat przedstawia filtr Notcha dla częstotliwości 50 Hz. 
+Układ opiera się o konfigurację z jednym wzmacniaczem operacyjnym TL082. 
 % --- photo: filtr nr 1 ---
 \begin{figure}[H]
 \centering
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=1\textwidth]{figures/NotchF_ideal.png}
+    \includegraphics[width=0.9\textwidth]{figures/NotchF_ideal.png}
 }
-\caption{Uproszczony schemat projektowanego filtru Notcha.}
+\caption{Schemat filtru Notcha dla częstotliwości 50 Hz.}
 \end{figure}
 % --- end photo ---
 
     \subsection{Wartości użytych elementów}
 
     \subsubsection{Wartości teoretyczne}
-xxxxxxxxxxxxxxx\\
-xxxxxxxxxxxxxxx
+Filtr notcha uzyskuje tłumienie w częstotliwości: 
+\begin{equation}
+\label{eq:notch_freq}
+f_0 = \frac{1}{2 \pi \sqrt{C_1 \cdot C_2} \sqrt{R_1 \cdot R_2}}
+\end{equation}
+czyli dla wartości $R_1 = R_2 = R_0$ i $C_1 = C_2 = C_0$ wzór 
+upraszcza się do: 
+\begin{equation}
+\label{eq:notch_freq_simple}
+f_0 = \frac{1}{2 \pi C_0 R_0}
+\end{equation}
+
+Dla przyjętego $C_0 = 470 nF$ otrzymujemy: 
 \begin{itemize}
     \item R1 = R2 = 6.8 k$\Omega$
     \item C1 = C2 = 470 nF
 \end{itemize}
-Wszystkie te wartości są naniesione na schemacie filtra w podsekcji 4.1.
+
+Wszystkie te wartości są naniesione na schemacie filtra przedstawionego 
+w sekcji 4.1
 
     \subsubsection{Wartości rzeczywiste}
 Rzeczywiste wartości elementów różnią się nieznacznie od teoretycznych i
@@ -45,11 +59,31 @@ charakterystykę, na której można zauważyć tłumienie na poziomie
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=1\textwidth]{plots/NotchF_freq_response.png}
+    \includegraphics[width=0.8\textwidth]{plots/NotchF_freq_response.png}
 }
 \caption{Odpowiedź częstotliwościowa filtru Notcha.}
 \end{figure}
 % --- end photo ---
 
-    \subsubsection{Pomiary}
-No trzeba by było zrobić żeby coś tu wpisać\ldots
+\subsubsection{Pomiary}
+Pomiary zostały przeprowadzone podając na wejście danego układu sygnału 
+sinusoidalnego o amplitudzie peak-to-peak 4 V. Otrzymaliśmy silne tumienie 
+sygnałów o częstotliwościach 50 Hz. Ostrość charakterystyki jest 
+wystarczająca, ale można zauważyć że tłumimy sygnały z całego pasma 
+naszego toru pomiarowego (1 - 300 Hz; nawet jeżeli to tłumienie jest 
+na poziomie 3-5 dB). Żeby osiągnąć mniejsze tłumienie poza 50 Hz powinno 
+się wykorzystać elementy o lepszej dobroci Q lub zastosować inne 
+konfiguracje (Twin-T, Fliege, Multiple Feedback Notch filters)
+\cite{NotchDesignQ}
+
+% --- photo: freq response filtra nr 1 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.8\textwidth]{plots/NotchF_real_response.png}
+}
+\caption{Odpowiedź częstotliwościowa filtru Notcha na podstawie punktów pomiarowych.}
+\end{figure}
+% --- end photo ---

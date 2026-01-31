@@ -8,7 +8,7 @@ Poniżej przedstawiono schemat pierwszego filtra pasmowo przepustowego.
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=1\textwidth]{figures/BPF_1st_ideal.png}
+    \includegraphics[width=0.9\textwidth]{figures/BPF_1st_ideal.png}
 }
 \caption{Schemat pierwszego filtra pasmowo przepustowego.}
 \end{figure}
@@ -17,8 +17,55 @@ Poniżej przedstawiono schemat pierwszego filtra pasmowo przepustowego.
     \subsection{Ćwiczenie obliczeniowe}
 Przed przystąpieniem do budowy filtra pasmowo przepustowego naszym zadaniem
 było dobranie odpowiednich wartości elementów tak, aby uzyskać
-pasmo 0.5 Hz - 1kHz o wzmocnieniu 10 V/V. \\
-{\Large\bfseries TRZEBA ZROBIĆ OBLICZENIA I WPISAĆ JE TUTAJ}
+pasmo 0.5 Hz - 1kHz o wzmocnieniu 10 V/V. Wiedząc, że wzmocnienie 
+dla tego układu wynosi (\ref{eq:bpf_1st_gain}) i jest stosunkiem rezystancji 
+R3 do R2, a bieguny kolejno występują w częstotliwościach 
+(\ref{eq:bpf_1st_pole_1}) i (\ref{eq:bpf_1st_pole_2}), dobraliśmy 
+wartości elementów jako:
+\begin{itemize}
+    \item R1 = 318 k$\Omega$
+    \item R2 = 1 k$\Omega$
+    \item R3 = 10 k$\Omega$
+    \item C1 = 1 $\mu$F
+    \item C2 = 15.9 nF
+\end{itemize}
+
+\begin{equation}
+\label{eq:bpf_1st_gain}
+A_v = \frac{R_3}{R_2}
+\end{equation}
+
+\begin{equation}
+\label{eq:bpf_1st_pole_1}
+\begin{aligned}
+f_{p1} = \frac{1}{2 \pi C_1 R_1} , \\
+R_1 = \frac{1}{2 \pi f_{p1} C_1} , \\
+\text{ dla przyjętego: } C_1 = 1 \mu F
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{eq:bpf_1st_pole_2}
+\begin{aligned}
+f_{p2} = \frac{1}{2 \pi C_2 R_{eq}} , \\
+\text{gdzie: } R_{eq} = \frac{R_2 \cdot R_3}{R_2 + R_3}
+\end{aligned}
+\end{equation}
+
+Dla tak dobranych wartości otrzymaliśmy charakterystykę o porządanych 
+parametrach (20 dB wzmocnienia, pasmo 0,5 - 1 kHz): 
+
+% --- photo: freq resp filtra obliczonego ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.8\textwidth]{plots/BPF_1st_calculated_response.png}
+}
+\caption{Odpowiedź filtra po podłożeniu powyżej podanych wartości}
+\end{figure}
+% --- end photo ---
 
     \subsection{Wartości użytych elementów}
 
@@ -36,7 +83,7 @@ Idealne wartości tych elementów wynoszą (naniesione na schemacie powyżej):
 \end{itemize}
 
     \subsubsection{Wartości rzeczywiste}
-Realne wartości elementów wykorzystanych do budowy filtra to:
+Rzeczywiste wartości elementów wykorzystanych do budowy filtra to:
 \begin{itemize}
     \item R1 = 327 k$\Omega$
     \item R2 = 0.984 k$\Omega$
@@ -51,7 +98,8 @@ Realne wartości elementów wykorzystanych do budowy filtra to:
 Po ustaleniu rzeczywistych wartości elementów, wykonaliśmy analizę
 częstotliwościową filtra w programie LTspice. Poniżej przedstawiono
 uzyskaną odpowiedź częstotliwościową. Kursor 1. wskazuje na 3dB 
-dolną granicę filtru, natomiast kursor 2. na górną granicę filtru. 
+dolną granicę filtru, natomiast kursor 2. - na górną granicę filtru. 
+
 % --- photo: freq response filtra nr 1 ---
 \begin{figure}[H]
 \centering
@@ -65,4 +113,20 @@ dolną granicę filtru, natomiast kursor 2. na górną granicę filtru.
 % --- end photo ---
 
     \subsubsection{Pomiary}
-No trzeba by było zrobić żeby coś tu wpisać\ldots
+Pomiary zostały przeprowadzone podając na wejście danego układu sygnału 
+sinusoidalnego o amplitudzie peak-to-peak 40 mV. Wartość amplitudy została 
+dobrana tak, aby sygnał po wzmocnieniu 100 krotnie był widoczny na 
+oscyloskopie w takiej formie jak został wygenerowany (jako sinusoida). 
+Tolerancja elementów wpłynęła nieznacznie na położenia biegunów. 
+Wzmocnienie otrzymaliśmy na oczekiwanym poziomie (40 dB).
+% --- photo: freq response filtra nr 1 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.8\textwidth]{plots/BPF_1st_real_response.png}
+}
+\caption{Odpowiedź częstotliwościowa pierwszego filtra na podstawie punktów pomiarowych.}
+\end{figure}
+% --- end photo ---

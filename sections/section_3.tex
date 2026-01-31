@@ -13,7 +13,7 @@ przenoszenia od 1 Hz do 300 Hz.
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=1\textwidth]{figures/BPF_ideal.png}
+    \includegraphics[width=0.9\textwidth]{figures/BPF_ideal.png}
 }
 \caption{Schemat drugiego filtra pasmowo przepustowego.}
 \end{figure}
@@ -25,7 +25,8 @@ przenoszenia od 1 Hz do 300 Hz.
 Drugi filtr wykorzystuje rezystory i kondensatory o wartościach, 
 które dobraliśmy na podstawie obliczeń teoretycznych - poniżej 
 przedstawione są wyniki tych obliczeń, a same obliczenia i dane parametry 
-są dodane na samym dole sprawozdania, w sekcji "\nameref{sec:calculations}". \\
+są dodane na samym dole sprawozdania, w sekcji 
+``\nameref{sec:calculations}''. \\
 Dla tych parametrów obliczyliśmy rezystory i kondensatory, przyjmując 
 początkowo C1 = 100nF. Po przybliżeniu wartości rezystorów i kondensatorów 
 do najbliższych wartości standardowych otrzymaliśmy:
@@ -75,11 +76,24 @@ uzyskaną odpowiedź częstotliwościową.
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=1\textwidth]{plots/BPF_freq_response.png}
+    \includegraphics[width=0.8\textwidth]{plots/BPF_freq_response.png}
 }
 \caption{Odpowiedź częstotliwościowa drugiego filtra pasmowo przepustowego.}
 \end{figure}
 % --- end photo ---
 
     \subsubsection{Pomiary}
-No trzeba by było zrobić żeby coś tu wpisać\ldots
+Pomiary zostały przeprowadzone podając na wejście danego układu sygnału 
+sinusoidalnego o amplitudzie peak-to-peak 4 V. 
+
+% --- photo: freq response filtra nr 1 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.8\textwidth]{plots/BPF_real_response.png}
+}
+\caption{Odpowiedź częstotliwościowa projektowanego filtru na podstawie punktów pomiarowych.}
+\end{figure}
+% --- end photo ---

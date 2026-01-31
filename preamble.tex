@@ -1,15 +1,15 @@
 % Page layout
 \usepackage[a4paper,margin=2.5cm]{geometry}
 
-% Force language
-%\usepackage[polish]{babel}
-
 % Font encoding
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
 % Including images
 \usepackage{graphicx}
+
+% Symbols & Emojis
+\usepackage{tikzsymbols}
 
 % Tables
 \usepackage{booktabs}
@@ -70,6 +70,9 @@
 \fancyhf{}
 \fancyhead[L]{Report}
 \fancyhead[R]{\thepage}
+
+% Overwrite article setting - deleting indents after section title
+\usepackage{indentfirst}
 
 % Warning suppression
 \usepackage{silence}

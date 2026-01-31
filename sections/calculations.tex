@@ -1,12 +1,10 @@
     \section{Obliczenia Teoretyczne}
     \label{sec:calculations}
 Do zaprojektowania filtru pasmowoprzepustowego o częstotliwościach 
-granicznych 1 Hz i 300 Hz oraz filtru Notcha wykorzystaliśmy wzory 
-z książki "Op Amps for Everyone"\cite{SLOA088}. Zawarte są w niej 
-wskazówki do projektowania flitrów, jak i obliczenia dla poszczególnych
-topoligii.
+granicznych 1 Hz i 300 Hz wykorzystaliśmy wzory z książki ``Op Amps for 
+Everyon''\cite{SLOA088}. Zawarte są w niej wskazówki do projektowania 
+flitrów, jak i obliczenia dla poszczególnych topoligii. \\
 
-    \subsection{Obliczenia dla filtra pasmowoprzepustowego}
 Wybrany filtr aktywny jest filtrem pasmowoprzepustowym 3 rzędu. Można 
 w jego strukturze zauważyć trzy podstawowe konfiguracje - filtr 
 dolnoprzepustowy aktywny (\ref{eq:lpf}), Sallen-Key (\ref{eq:sk}) 
@@ -79,5 +77,15 @@ R_{4} = \frac{1}{2 \pi f_c C_4}
 338,6 k\Omega
 \end{equation}
 
-    \subsection{Obliczenia dla filtra Notcha o częstotliwości 50 Hz}
-{\large\bfseries UZUPEŁNIĆ} 
+% --- photo: freq response filtra nr 1 ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.8\textwidth]{figures/calculations_official_paper.jpg}
+}
+\caption{Dowód że liczyliśmy \dWinkey[1.5].}
+\end{figure}
+% --- end photo ---
+
