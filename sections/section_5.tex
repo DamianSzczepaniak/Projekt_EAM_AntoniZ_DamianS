@@ -12,6 +12,7 @@ następujący sygnał:
     \includegraphics[width=0.5\textwidth]{figures/EKG_4.jpg}
 }
 \caption{Otrzymany sygnał EKG i przybliżenie na peak sygnału.}
+\label{fig:ekg}
 \end{figure}
 % --- end photo ---
 
@@ -36,9 +37,23 @@ przyczyny, ale najbardziej prawdopodobnymi powodami na zaszumiony sygnał
 są pojemności pasożytnicze i nie dopasowanie impedancji sond, którymi 
 wykonywaliśmy pomiar. Należy też pamiętać o ``Motion Artifacts'', które 
 są spowodowane głównie niedobrowolnym ruchem osoby badanej i są widoczne 
-na oscyloskopie w podobnej formie jak szum.
+na oscyloskopie w podobnej formie jak szum. \\
+BPM z pomiaru na Figure \ref{fig:ekg}. wynosi 88, co było zbliżone do 
+wartości pomiaru z cyfrowego zegarka - 84 BPM.
 
-% --- photo: wygląd pcb ---
+% --- photo: zegarek ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.4\textwidth]{figures/clock_mesurement.jpg}
+}
+\caption{Pomiar otrzymany z smartwatcha.}
+\end{figure}
+% --- end photo ---
+
+% --- photo: sygnał z generatora ---
 \begin{figure}[H]
 \centering
 \setlength{\fboxrule}{2pt}
