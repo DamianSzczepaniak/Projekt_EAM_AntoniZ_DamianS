@@ -1,15 +1,54 @@
     \section{Pomiary biosygnałów}
-Po podpięciu elektrod do wejścia całego układu otrzymaliśmy sygnał:
+Po podpięciu elektrod do wejścia całego układu otrzymaliśmy 
+następujący sygnał: 
 
-% --- photo: filtr nr 1 ---
+% --- photo: sygnał ekg ---
 \begin{figure}[H]
 \centering
 \setlength{\fboxrule}{2pt}
 \setlength{\fboxsep}{0pt}
 \fbox{
-    \includegraphics[width=0.9\textwidth]{figures/EKG_1.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/EKG_1.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/EKG_4.jpg}
 }
-\caption{Schemat pierwszego filtra pasmowo przepustowego.}
-\label{fig:pga204}
+\caption{Otrzymany sygnał EKG i przybliżenie na peak sygnału.}
 \end{figure}
 % --- end photo ---
+
+% --- photo: wygląd pcb ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.34\textwidth]{figures/PCB_top_view.jpg}
+    \includegraphics[width=0.6\textwidth]{figures/PCB_side_2_view.jpg}
+}
+\caption{Płytka jednowarstwowa w trakcie pomiaru.}
+\end{figure}
+% --- end photo ---
+
+Otrzymany sygnał wyjściowy jest lekko zaszumiony, lecz nie są 
+to szumy z zasilania (50 Hz), poniższe pomiary wskazują na tłumienie 
+częstotliwości w okolicach 50 Hz w przeciwieństwie do częstotliwości 
+w paśmie przepustowym (150 Hz). Nie udało nam się określić jednoznacznej 
+przyczyny, ale najbardziej prawdopodobnymi powodami na zaszumiony sygnał 
+są pojemności pasożytnicze i nie dopasowanie impedancji sond, którymi 
+wykonywaliśmy pomiar. Należy też pamiętać o ``Motion Artifacts'', które 
+są spowodowane głównie niedobrowolnym ruchem osoby badanej i są widoczne 
+na oscyloskopie w podobnej formie jak szum.
+
+% --- photo: wygląd pcb ---
+\begin{figure}[H]
+\centering
+\setlength{\fboxrule}{2pt}
+\setlength{\fboxsep}{0pt}
+\fbox{
+    \includegraphics[width=0.5\textwidth]{figures/AfterNotch_sine_5mV_150Hz.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/AfterNotch_sine_5mV_50Hz.jpg}
+}
+\caption{Sygnał na wyjściu po podaniu sinusa 5mV peak-to-peak o 
+częstotliwościach 150 i 50 Hz}
+\end{figure}
+% --- end photo ---
+

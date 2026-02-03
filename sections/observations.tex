@@ -2,6 +2,22 @@
 Każdy stopień toru pomiarowego daje zbliżone do przewidywanych, 
 teoretycznych wartości. 
 Przedwzmacniacz zapewnia nam wzmocnienie sygnału 
-o regulowaną wartość oraz posiada sondę odniesienia (RLD). 
+o regulowaną wartość oraz posiada sondę odniesienia (RLD). Filtry 
+pasmowoprzepustowe pozwalają na otrzymanie sygnału z określonego 
+przedziału częstotliwościowego minimalizując przy tym szumy - głównie
+termiczne, ale dla niskich częstotliwości także szumy $\frac{1}{f}$. 
 Filtr Notcha daje tłumienie na poziomie 30 dB dla zakłóceń 50 Hz, 
-ale tłumi także sygnały wokół tej częstotliwości (nawet od 1 - 200Hz). 
+ale tłumi także sygnały wokół tej częstotliwości - nawet od 1 do 200Hz.  
+Można zmniejszyć ten efekt stosując lepsze konfiguracje i elementy o 
+większej dobroci. \\
+Sygnał EKG udało się otrzymać, ale nie był łatwy do zarejestrowania 
+przez duże i wzmocnione przez cały tor pomiarowy szumy. Były one 
+widoczne już na wejściu do wzmacniacza PGA204AP i na wyjściu elektrod. 
+Dla sygnałów podawanych z generatora nie było to problemem. 
+Nie udało się jednoznacznie dojść do źródła problemu, ale 
+najprawdopodobniej jest to spowodowane nierównościami impedancji 
+między elektrodami. Należy też wspomnieć o ``Motion Artifacts'' 
+(przejawiające się jako rożnica potencjału; wynikające z ruchu 
+dobrowolnego lub niedobrowolnego ruchu osoby badanej), 
+które także powodują podobnie zaszumiony sygnałi były zauważalne 
+na oscyloskopie.
